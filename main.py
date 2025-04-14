@@ -4,7 +4,9 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 import os
 from PIL import Image
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Load the trained model
 #MODEL_PATH = 'cat_dog_final.keras'
